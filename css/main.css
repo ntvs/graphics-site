@@ -1,0 +1,183 @@
+/*Reset styles*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    min-width: 300px;
+}
+
+/*body styles*/
+body {
+    min-height: 100%;
+    background-color: rgb(240, 240, 240);
+    /* background: linear-gradient(#fff, #b2fd00); */
+}
+
+/*Header styles*/
+#siteLogo {
+    width: 200px;
+    height: auto;
+}
+
+#header {
+    width: 100%;
+    padding: 1em;
+
+    /* display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr; */
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    
+    transition: 0.5s;
+    background-color: rgba(240, 240, 240, 0.95);
+}
+
+#header button {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3em;
+    float: right;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 2.5em;
+    color: gray;
+    transition: 0.5s;
+}
+#header button:hover, #header button:active {
+    color: rgb(51, 51, 51);
+}
+
+.gradientBG {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.0));
+}
+
+.solidBG {
+    background-color: rgba(240, 240, 240, 0.95);
+}
+
+h2 {
+    text-align: center;
+    /* background-color: white; */
+    background-color: #3C4DF2;
+    color: white;
+    padding: 0.8em;
+    display: inline-block;
+}
+
+.cover {
+    width: 100%;
+    height: 60vh;
+
+    background-image: url("/img/LRgHbFH.gif"); /*url("/img/hpDVO2w.png")*/
+    background-size: cover;
+    background-position: center;
+}
+
+.panel {
+    /* margin: 1em 0; */
+    background-color: #AFAFFF;
+    transition: 0.2s;
+}
+
+.panel:hover, .panel:active {
+    box-shadow: 0 0 20px 0.5em rgba(0, 0, 0, 0.2);
+}
+
+.panel img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+
+    transition: 0.5s;
+}
+
+.modalContent {
+    color: white;
+    width: 100%;
+}
+
+.modalLink {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1.5em;
+    font-size: 1.5em;
+    transition: 0.2s;
+}
+
+.modalLink:hover, .modalLink:active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: gray;
+    transition: 0.5s;
+
+    width: 100%;
+}
+
+.modalButton:hover, .modalButton:active {
+    color: rgb(128, 11, 11)
+}
+
+.invisible {
+    display: none;
+}
+
+.no-opacity {
+    opacity: 0;
+}
+
+footer {
+    background-color: #222E12;
+    padding: 2em 0;
+    text-align: center;
+    color: #76BD13;
+}
+
+footer h3 {
+    margin: 0 0 1em 0;
+}
+
+footer > .container > a, footer > .container > a:visited {
+    color: inherit;
+    text-decoration: none;
+}
